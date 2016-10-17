@@ -1,0 +1,14 @@
+function repeatStringNumTimes(str, num) {
+//first edge case is if the number is less than 0
+// then we just want to return nothing.  
+  if (num <= 0) {return "";}
+ if (num > 0) {
+  var output = "";
+   for (var i = 0; i < num; i++) {
+   output += str;  
+   }//ending for loop going through a block of code "num" number of times
+   return output;
+}// end the if statement.
+  
+}//end function definition
+repeatStringNumTimes("abc", 3);
