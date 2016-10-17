@@ -1,0 +1,21 @@
+function titleCase(str) {  
+  // first we make it all lowercase and
+  // split it into separate words.
+  str = str.toLowerCase().split(" ");
+  //then we iterate through the array of words
+  for (var i = 0; i < str.length; i++) {
+  // and here's the most goocky part of the whole thing.
+  // We take charAt0 and make it uppercase
+  // then separately, we take a slice of the word
+  // which is everything from the second lettor onward
+  // which is index[1] .. don't forget indexZero language.
+  // we are really doing word = modified word.
+    //where modified word is first letter Uppercased + rest of word.
+  
+  str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);      
+// join() puts them all back as 1 string. 
+  }
+  return str.join(' '); 
+}
+
+titleCase("I'm a little tea pot");
