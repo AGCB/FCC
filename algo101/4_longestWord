@@ -1,0 +1,24 @@
+// FIND THE LONGEST WORD IN THE STRING
+// writing comments after I've already done it.
+// as of 10162016 this reads legibly for me.
+// we start a function with a string.
+function findLongestWord(str) {
+// the we name something. strSplit will be an array
+// where we separate every word of str.
+// the point of that is to make any individual word
+//accessible from strSplit[someNumber];
+ var strSplit = str.split(' ');
+// now we create max, our output variable later on.
+  var max = 0;
+ 
+// for every item in our array,...  
+  for (var i = 0; i < strSplit.length; i++) {
+// if the words length is bigger than max, then it becomes max.
+// or... max becomes it.    
+    if (strSplit[i].length > max) {max = strSplit[i].length;}
+    
+  }// ending forLoop
+  return max;
+}//ending funcDefinition
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
