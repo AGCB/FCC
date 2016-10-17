@@ -1,6 +1,6 @@
 function repeatStringNumTimes(str, num) {
 //first edge case is if the number is less than 0
-// then we just want to return nothing.  
+//  then we just want to return nothing.  
   if (num <= 0) {return "";}
  if (num > 0) {
   var output = "";
