@@ -1,0 +1,12 @@
+
+function truncateString(str, num) {
+
+  if (str.length <= num) {return str;}
+  else {
+    // i need to study the syntax in that slice
+    // method. that's not intuitive for me
+    return str.slice(0, num > 3 ? num - 3 : num) + "...";
+  }
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
