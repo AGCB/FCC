@@ -1,0 +1,23 @@
+// this is from following the youtube vid from 
+// CodingTutorials360.
+// He's a guy going through the challenges 1 vid at a time.
+// ------------------------------
+// FACTORIALIZE A NUMBER
+function factorialize(num) {
+  var count = num;
+  if (count === 0) {
+    return 1;
+  }
+  else {
+  
+  for (var i = 1; i<count; i++) {
+    num = num * i;
+  }
+  
+  return num;
+}}
+
+factorialize(4);
+// ------------------------------
+
+
