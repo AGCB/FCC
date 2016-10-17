@@ -1,0 +1,7 @@
+function confirmEnding(str, target) {
+// returns a boolean.. we are checking that
+// the last letter is the same as target.
+  return str.slice(-target.length) === target;
+  
+}
+confirmEnding("Bastian", "n");
